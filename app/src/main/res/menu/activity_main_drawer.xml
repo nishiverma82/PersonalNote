@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_notes"
+            android:icon="@drawable/ic_notes"
+            android:title="Notes" />
+        <item
+            android:id="@+id/nav_my_diary"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="My Diary" />
+        <item
+            android:id="@+id/nav_reminders"
+            android:icon="@drawable/ic_reminder"
+            android:title="Reminders" />
+        <item
+            android:id="@+id/nav_pass_store"
+            android:icon="@drawable/ic_pass_store"
+            android:title="Pass Store" />
+
+        <item
+            android:id="@+id/nav_my_budget"
+            android:icon="@drawable/ic_menu_budget"
+            android:title="My Budget" />
+    </group>
+
+
+    <item android:title="Other">
+        <menu>
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Share" />
+        </menu>
+    </item>
+</menu>

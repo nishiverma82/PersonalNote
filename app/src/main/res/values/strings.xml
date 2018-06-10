@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Personal Note</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="username">Username</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="sign_in_through_google_account">Sign In through Google Account</string>
+    <string name="sign_in_using">Or Sign In using</string>
+    <string name="register">Register</string>
+    <string name="sign_in">Sign In</string>
+    <string name="click_to_sign_up">Not a member? Click here to Sign Up!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="take_a_note">Take a Note...</string>
+    <string name="username_email">Username/email</string>
+    <string name="enter_web_url">Enter web URL</string>
+    <string name="additional_notes">Additional Notes</string>
+    <string name="save">Save</string>
+    <string name="forgot_password">forgot password?</string>
+    <string name="todo">TODO</string>
+</resources>

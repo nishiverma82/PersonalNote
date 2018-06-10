@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nishchal.personalnote">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Splash screen -->
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- Google Sign-In Activity -->
+        <activity
+            android:name=".Signin.EmailPasswordSignIn"
+            android:label="@string/app_name" />
+
+
+        <!-- Main activity -->
+        <activity
+            android:name=".MainActivity"
+            android:label="Notes"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- Notes activity -->
+        <activity
+            android:name=".Notes.NotesItemActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity android:name=".Notes.NotesListActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity android:name=".Notes.NotesSpeechActivity"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity android:name=".Notes.NotesCardClickActivity"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity android:name=".Notes.NotesCardListActivity"
+            android:windowSoftInputMode="adjustPan"/>
+
+
+        <!-- Pass Store Activity -->
+        <activity android:name=".PassStore.PassStoreItemActivity"
+            android:label="@string/app_name"/>
+
+        <activity android:name=".PassStore.PassStoreAddItemActivity"
+            android:label="@string/app_name"/>
+
+
+        <!-- Diary Activity -->
+        <activity android:name=".Diary.DiaryAddItem"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity android:name=".Diary.DiaryItemActivity"
+            android:windowSoftInputMode="adjustPan"/>
+
+
+        <!-- Budget Activity -->
+        <activity android:name=".Budget.BudgetAddEntry"/>
+
+        <activity android:name=".Budget.BudgetDateEntryActivity"/>
+
+
+        <!-- Reminders Activity -->
+        <activity android:name=".Reminders.ReminderAddItem"/>
+
+        <activity android:name=".Reminders.ReminderItemActivity"/>
+
+        <receiver android:name=".AlertReceiver"/>
+
+
+        <!-- Settings Activity -->
+        <activity android:name=".Settings.Settings"/>
+
+        <!-- Lock Screen Activity -->
+        <activity android:name=".PinLockActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+    </application>
+
+</manifest>

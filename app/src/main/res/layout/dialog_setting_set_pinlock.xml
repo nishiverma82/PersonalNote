@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/dialog_pin_title"
+        android:text="Set Pin Lock"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:ems="10"
+        android:padding="5dp"
+        android:hint="Enter Pin"
+        android:inputType="number"
+        android:id="@+id/pin"
+        android:maxLength="4"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:ems="10"
+        android:padding="5dp"
+        android:id="@+id/confirm_pin"
+        android:hint="Confirm Pin"
+        android:inputType="number"
+        android:maxLength="4"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set"
+        android:textSize="20dp"
+        android:id="@+id/set_pin_button"
+        android:background="@null"/>
+
+</LinearLayout>

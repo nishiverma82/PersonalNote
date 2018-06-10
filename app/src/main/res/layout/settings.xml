@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nishchal.personalnote.Settings.Settings"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/change_password"
+        android:background="@null"
+        android:text="Change Password"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pin_lock_password"
+        android:background="@null"
+        android:text="Set Pin Lock"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:paddingBottom="0dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set up your 4 digit pin lock to your app"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/change_pin"
+        android:background="@null"
+        android:text="Change Pin Lock"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:padding="10dp"/>
+
+</LinearLayout>
